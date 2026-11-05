@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 490" width="900" height="490" role="img" aria-labelledby="t d">
+  <title id="t">ROE (Rules of Engagement)</title>
+  <desc id="d">ROE의 여섯 가지 구성 요소와 핵심 원칙</desc>
+  <style>
+    text { font-family: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; fill: #1f2937; }
+    .bg { fill: #f8fafc; }
+    .title { font-size: 24px; font-weight: 700; }
+    .sub { font-size: 14px; fill: #64748b; }
+    .box { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.5; }
+    .roe { fill: #fffbeb; stroke: #f59e0b; stroke-width: 2; }
+    .bad { fill: #fef2f2; stroke: #fca5a5; stroke-width: 1.5; }
+    .name { font-size: 15px; font-weight: 700; }
+    .small { font-size: 12px; fill: #475569; }
+    .body { font-size: 13px; fill: #334155; }
+    .num { font-size: 14px; font-weight: 700; fill: #ffffff; }
+    .arrow { fill: #94a3b8; }
+    .loop { fill: none; stroke: #94a3b8; stroke-width: 2.5; stroke-dasharray: 7 5; }
+  </style>
+  <rect class="bg" width="900" height="490" rx="14"/>
+  <text class="title" x="30" y="46">ROE (Rules of Engagement)</text>
+  <text class="sub" x="30" y="70">허용되는 목표, 공격 수단, 제약사항을 미리 정해 둔 약속</text>
+  <rect class="box" x="30" y="100" width="270" height="140" rx="10"/>
+  <text class="name" x="46" y="132" >범위 (Scope)</text>
+  <text class="small" x="46" y="154">어디까지 테스트하는가</text>
+  <text class="body" x="46" y="182">예) 대상 모델, API,</text>
+  <text class="body" x="46" y="200">환경(운영/스테이징)</text>
+  <rect class="box" x="315" y="100" width="270" height="140" rx="10"/>
+  <text class="name" x="331" y="132" >허용 행위</text>
+  <text class="small" x="331" y="154">해도 되는 공격</text>
+  <text class="body" x="331" y="182">예) 프롬프트 인젝션,</text>
+  <text class="body" x="331" y="200">탈옥 시도, 정보 추출 시도</text>
+  <rect class="bad" x="600" y="100" width="270" height="140" rx="10"/>
+  <text class="name" x="616" y="132" style="fill:#b91c1c">금지 행위</text>
+  <text class="small" x="616" y="154">하면 안 되는 것</text>
+  <text class="body" x="616" y="182">예) 서비스 중단(DoS) 유발,</text>
+  <text class="body" x="616" y="200">PII 무단 유출·보관,</text>
+  <text class="body" x="616" y="218">범위 밖 시스템 공격</text>
+  <rect class="box" x="30" y="255" width="270" height="140" rx="10"/>
+  <text class="name" x="46" y="287" >데이터 취급</text>
+  <text class="small" x="46" y="309">얻은 정보를 어떻게 다루는가</text>
+  <text class="body" x="46" y="337">예) 민감 정보는 최소로 수집,</text>
+  <text class="body" x="46" y="355">보관·폐기 규칙</text>
+  <rect class="box" x="315" y="255" width="270" height="140" rx="10"/>
+  <text class="name" x="331" y="287" >중단 조건</text>
+  <text class="small" x="331" y="309">언제 멈추는가</text>
+  <text class="body" x="331" y="337">예) 장애나 실제 피해 징후가</text>
+  <text class="body" x="331" y="355">보이면 즉시 중단하고 통보</text>
+  <rect class="box" x="600" y="255" width="270" height="140" rx="10"/>
+  <text class="name" x="616" y="287" >보고 체계</text>
+  <text class="small" x="616" y="309">누구에게 어떻게 알리는가</text>
+  <text class="body" x="616" y="337">예) 연락 창구,</text>
+  <text class="body" x="616" y="355">취약점 공유 시점과 방식</text>
+  <rect x="30" y="418" width="840" height="46" rx="10" fill="#fffbeb" stroke="#f59e0b" stroke-width="2"/>
+  <text class="name" x="450" y="447" text-anchor="middle">핵심 원칙: 시스템의 안전한 운영을 해치지 않는 범위에서 검증한다</text>
+</svg>

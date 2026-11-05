@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 680" width="900" height="680" role="img" aria-labelledby="t d">
+  <title id="t">AI 레드팀 용어 지도</title>
+  <desc id="d">핵심 용어 13개를 공격, 측정, 규칙·분류, 팀 구분으로 묶은 도식</desc>
+  <style>
+    text { font-family: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; fill: #1f2937; }
+    .bg { fill: #f8fafc; }
+    .title { font-size: 24px; font-weight: 700; }
+    .sub { font-size: 14px; fill: #64748b; }
+    .box { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.5; }
+    .roe { fill: #fffbeb; stroke: #f59e0b; stroke-width: 2; }
+    .bad { fill: #fef2f2; stroke: #fca5a5; stroke-width: 1.5; }
+    .name { font-size: 15px; font-weight: 700; }
+    .small { font-size: 12px; fill: #475569; }
+    .body { font-size: 13px; fill: #334155; }
+    .num { font-size: 14px; font-weight: 700; fill: #ffffff; }
+    .arrow { fill: #94a3b8; }
+    .loop { fill: none; stroke: #94a3b8; stroke-width: 2.5; stroke-dasharray: 7 5; }
+  </style>
+  <rect class="bg" width="900" height="680" rx="14"/>
+  <text class="title" x="30" y="46">AI 레드팀 용어 지도</text>
+  <text class="sub" x="30" y="70">용어 13개를 역할별로 묶어서 정리</text>
+  <rect x="30" y="100" width="410" height="260" rx="12" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+  <text class="name" x="48" y="130" style="fill:#b91c1c;font-size:16px">공격 쪽</text>
+  <text class="name" x="48" y="162" style="font-size:14px">Attack Surface</text>
+  <text class="small" x="48" y="179">공격이 들어올 수 있는 노출면 (인젝션, 유출, API 오용)</text>
+  <text class="name" x="48" y="202" style="font-size:14px">Adversarial Prompting</text>
+  <text class="small" x="48" y="219">가드레일 우회를 노린 입력 (역할극, 인코딩, 다단계)</text>
+  <text class="name" x="48" y="242" style="font-size:14px">직접 프롬프트 인젝션</text>
+  <text class="small" x="48" y="259">사용자가 입력에 지시를 직접 넣어 시스템 지시를 덮어씀</text>
+  <text class="name" x="48" y="282" style="font-size:14px">간접 프롬프트 인젝션</text>
+  <text class="small" x="48" y="299">웹페이지, 문서 등 외부 데이터에 숨긴 지시가 들어옴</text>
+  <text class="name" x="48" y="322" style="font-size:14px">탈옥 (Jailbreak)</text>
+  <text class="small" x="48" y="339">모델의 안전 정책 자체를 우회</text>
+  <rect x="460" y="100" width="410" height="260" rx="12" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+  <text class="name" x="478" y="130" style="fill:#1d4ed8;font-size:16px">측정·평가</text>
+  <text class="name" x="478" y="162" style="font-size:14px">Vulnerability Scoring</text>
+  <text class="small" x="478" y="179">취약점의 심각도와 비즈니스 영향을 수치로 평가</text>
+  <text class="name" x="478" y="202" style="font-size:14px">ASR (Attack Success Rate)</text>
+  <text class="small" x="478" y="219">전체 시도 중 공격이 성공한 비율, 재현성을 수치로 표현</text>
+  <rect x="30" y="372" width="410" height="215" rx="12" fill="#fffbeb" stroke="#fcd34d" stroke-width="1.5"/>
+  <text class="name" x="48" y="402" style="fill:#92400e;font-size:16px">규칙·분류 체계</text>
+  <text class="name" x="48" y="434" style="font-size:14px">ROE</text>
+  <text class="small" x="48" y="451">허용 목표, 공격 수단, 제약사항을 정한 규칙</text>
+  <text class="name" x="48" y="474" style="font-size:14px">OWASP LLM Top 10</text>
+  <text class="small" x="48" y="491">LLM 앱의 위험 10가지 · 무엇이 위험한가</text>
+  <text class="name" x="48" y="514" style="font-size:14px">MITRE ATLAS</text>
+  <text class="small" x="48" y="531">AI 공격의 전술·기법 · 공격이 어떻게 진행되나</text>
+  <text class="name" x="48" y="554" style="font-size:14px">NIST AI RMF</text>
+  <text class="small" x="48" y="571">조직의 AI 위험 관리 틀 · 레드팀은 Measure 단계</text>
+  <rect x="460" y="372" width="410" height="215" rx="12" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/>
+  <text class="name" x="478" y="402" style="fill:#15803d;font-size:16px">팀 구분</text>
+  <text class="name" x="478" y="434" style="font-size:14px">레드팀</text>
+  <text class="small" x="478" y="451">공격자 역할로 취약점을 탐색</text>
+  <text class="name" x="478" y="474" style="font-size:14px">블루팀</text>
+  <text class="small" x="478" y="491">방어·탐지·대응 담당</text>
+  <text class="name" x="478" y="514" style="font-size:14px">퍼플팀</text>
+  <text class="small" x="478" y="531">두 팀이 결과를 공유하며 방어를 함께 개선</text>
+  <rect x="478" y="262" width="374" height="46" rx="10" fill="#ffffff" stroke="#93c5fd" stroke-width="1.5"/>
+  <text class="name" x="665" y="290" text-anchor="middle" style="fill:#1d4ed8">위험도 ≈ 가능성(성공률·난이도) × 영향도</text>
+  <rect x="30" y="607" width="840" height="46" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text class="body" x="450" y="635" text-anchor="middle">탈옥은 모델의 안전 정책 우회, 프롬프트 인젝션은 앱의 지시 체계 탈취. 실제 공격은 둘을 함께 쓰는 경우가 많음</text>
+</svg>

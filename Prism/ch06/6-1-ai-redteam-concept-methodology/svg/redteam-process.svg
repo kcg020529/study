@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 370" width="900" height="370" role="img" aria-labelledby="t d">
+  <title id="t">AI 레드팀 수행 절차</title>
+  <desc id="d">범위 설정부터 재검증까지 7단계와 반복</desc>
+  <style>
+    text { font-family: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; fill: #1f2937; }
+    .bg { fill: #f8fafc; }
+    .title { font-size: 24px; font-weight: 700; }
+    .sub { font-size: 14px; fill: #64748b; }
+    .box { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.5; }
+    .roe { fill: #fffbeb; stroke: #f59e0b; stroke-width: 2; }
+    .bad { fill: #fef2f2; stroke: #fca5a5; stroke-width: 1.5; }
+    .name { font-size: 15px; font-weight: 700; }
+    .small { font-size: 12px; fill: #475569; }
+    .body { font-size: 13px; fill: #334155; }
+    .num { font-size: 14px; font-weight: 700; fill: #ffffff; }
+    .arrow { fill: #94a3b8; }
+    .loop { fill: none; stroke: #94a3b8; stroke-width: 2.5; stroke-dasharray: 7 5; }
+  </style>
+  <rect class="bg" width="900" height="370" rx="14"/>
+  <text class="title" x="30" y="46">AI 레드팀 수행 절차</text>
+  <text class="sub" x="30" y="70">ROE 합의는 모든 공격 수행의 전제 조건</text>
+  <rect class="box" x="30" y="100" width="108" height="160" rx="10"/>
+  <circle cx="84" cy="128" r="14" fill="#3b82f6"/><text class="num" x="84" y="133" text-anchor="middle">1</text>
+  <text class="name" x="84" y="172" text-anchor="middle">범위·목표</text>
+  <text class="name" x="84" y="192" text-anchor="middle">설정</text>
+  <text class="small" x="84" y="224" text-anchor="middle">대상과 검증 목표</text>
+  <text class="small" x="84" y="242" text-anchor="middle">정의</text>
+  <path class="arrow" d="M140 174 l8 6 l-8 6 z"/>
+  <rect class="roe" x="152" y="100" width="108" height="160" rx="10"/>
+  <circle cx="206" cy="128" r="14" fill="#d97706"/><text class="num" x="206" y="133" text-anchor="middle">2</text>
+  <text class="name" x="206" y="172" text-anchor="middle">ROE</text>
+  <text class="name" x="206" y="192" text-anchor="middle">합의</text>
+  <text class="small" x="206" y="224" text-anchor="middle">허용·금지·중단</text>
+  <text class="small" x="206" y="242" text-anchor="middle">조건을 문서로</text>
+  <path class="arrow" d="M262 174 l8 6 l-8 6 z"/>
+  <rect class="box" x="274" y="100" width="108" height="160" rx="10"/>
+  <circle cx="328" cy="128" r="14" fill="#3b82f6"/><text class="num" x="328" y="133" text-anchor="middle">3</text>
+  <text class="name" x="328" y="172" text-anchor="middle">위협</text>
+  <text class="name" x="328" y="192" text-anchor="middle">모델링</text>
+  <text class="small" x="328" y="224" text-anchor="middle">공격 표면과</text>
+  <text class="small" x="328" y="242" text-anchor="middle">시나리오 도출</text>
+  <path class="arrow" d="M384 174 l8 6 l-8 6 z"/>
+  <rect class="box" x="396" y="100" width="108" height="160" rx="10"/>
+  <circle cx="450" cy="128" r="14" fill="#3b82f6"/><text class="num" x="450" y="133" text-anchor="middle">4</text>
+  <text class="name" x="450" y="172" text-anchor="middle">공격</text>
+  <text class="name" x="450" y="192" text-anchor="middle">수행</text>
+  <text class="small" x="450" y="224" text-anchor="middle">실행하고</text>
+  <text class="small" x="450" y="242" text-anchor="middle">모든 시도 기록</text>
+  <path class="arrow" d="M506 174 l8 6 l-8 6 z"/>
+  <rect class="box" x="518" y="100" width="108" height="160" rx="10"/>
+  <circle cx="572" cy="128" r="14" fill="#3b82f6"/><text class="num" x="572" y="133" text-anchor="middle">5</text>
+  <text class="name" x="572" y="172" text-anchor="middle">평가·</text>
+  <text class="name" x="572" y="192" text-anchor="middle">점수화</text>
+  <text class="small" x="572" y="224" text-anchor="middle">성공률 ×</text>
+  <text class="small" x="572" y="242" text-anchor="middle">영향도로 심각도</text>
+  <path class="arrow" d="M628 174 l8 6 l-8 6 z"/>
+  <rect class="box" x="640" y="100" width="108" height="160" rx="10"/>
+  <circle cx="694" cy="128" r="14" fill="#3b82f6"/><text class="num" x="694" y="133" text-anchor="middle">6</text>
+  <text class="name" x="694" y="172" text-anchor="middle">보고·</text>
+  <text class="name" x="694" y="192" text-anchor="middle">개선</text>
+  <text class="small" x="694" y="224" text-anchor="middle">재현 절차와</text>
+  <text class="small" x="694" y="242" text-anchor="middle">완화 방안</text>
+  <path class="arrow" d="M750 174 l8 6 l-8 6 z"/>
+  <rect class="box" x="762" y="100" width="108" height="160" rx="10"/>
+  <circle cx="816" cy="128" r="14" fill="#3b82f6"/><text class="num" x="816" y="133" text-anchor="middle">7</text>
+  <text class="name" x="816" y="172" text-anchor="middle">재검증</text>
+  <text class="small" x="816" y="224" text-anchor="middle">조치 후 같은</text>
+  <text class="small" x="816" y="242" text-anchor="middle">시나리오 재테스트</text>
+  <rect x="68" y="274" width="140" height="24" rx="12" fill="#fef3c7" stroke="#fcd34d"/><text class="small" x="138" y="291" text-anchor="middle" style="font-weight:700;fill:#92400e">모든 공격의 전제</text>
+  <path class="loop" d="M730 262 V318 H84 V268"/><path class="arrow" d="M84 262 l-6 9 h12 z"/>
+  <text class="body" x="407" y="342" text-anchor="middle">모델·프롬프트가 바뀌면 행동도 바뀌므로 반복해서 수행함 (일회성이 아님)</text>
+</svg>
