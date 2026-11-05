@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" width="900" height="700" role="img" aria-labelledby="t d">
+  <title id="t">LangChain 실습 00~06단계</title>
+  <desc id="d">프롬프트 기초에서 구조화 출력까지 7단계 학습 흐름, LangChain 범위 라벨, 보안 포인트</desc>
+  <style>
+    text { font-family: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; fill: #1f2937; }
+    .bg { fill: #f8fafc; }
+    .title { font-size: 24px; font-weight: 700; }
+    .sub { font-size: 14px; fill: #64748b; }
+    .row { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.5; }
+    .num { font-size: 18px; font-weight: 700; fill: #ffffff; }
+    .name { font-size: 16px; font-weight: 700; }
+    .desc { font-size: 13px; fill: #475569; }
+    .tag { font-size: 12px; font-weight: 700; }
+    .sec { fill: #fee2e2; stroke: #fca5a5; }
+    .secT { fill: #b91c1c; }
+    .sc { font-size: 11px; font-weight: 700; }
+    .lc { fill: #dbeafe; stroke: #93c5fd; } .lcT { fill: #1d4ed8; }
+    .mx { fill: #fef3c7; stroke: #fcd34d; } .mxT { fill: #92400e; }
+    .ot { fill: #f1f5f9; stroke: #cbd5e1; } .otT { fill: #475569; }
+    .rail { stroke: #cbd5e1; stroke-width: 3; }
+  </style>
+
+  <rect class="bg" width="900" height="700" rx="14"/>
+  <text class="title" x="40" y="52">LangChain 실습 00~06단계</text>
+  <text class="sub" x="40" y="76">프롬프트 기초에서 구조화 출력까지 · 붉은 태그는 보안 포인트</text>
+
+  <rect class="lc" x="560" y="30" width="96" height="20" rx="10"/><text class="sc lcT" x="608" y="44" text-anchor="middle">LangChain</text>
+  <rect class="mx" x="666" y="30" width="96" height="20" rx="10"/><text class="sc mxT" x="714" y="44" text-anchor="middle">혼합</text>
+  <rect class="ot" x="772" y="30" width="88" height="20" rx="10"/><text class="sc otT" x="816" y="44" text-anchor="middle">LangChain 밖</text>
+  <text class="desc" x="860" y="72" text-anchor="end" style="font-size:12px">혼합 = LangChain + 다른 라이브러리(dotenv, Pydantic, Streamlit)</text>
+
+  <line class="rail" x1="68" y1="118" x2="68" y2="640"/>
+
+  <g><rect class="row" x="40" y="100" width="820" height="72" rx="10"/>
+    <circle cx="68" cy="136" r="18" fill="#3b82f6"/><text class="num" x="68" y="142" text-anchor="middle">00</text>
+    <text class="name" x="104" y="128">프롬프트 엔지니어링 기초</text>
+    
+    <text class="desc" x="104" y="152">system / user 구분, few-shot, temperature, 사용자 입력은 데이터로 취급</text>
+    <rect class="ot" x="744" y="112" width="96" height="20" rx="10"/><text class="sc otT" x="792" y="126" text-anchor="middle">LangChain 밖</text>
+    <rect class="sec" x="690" y="140" width="150" height="22" rx="11"/><text class="tag secT" x="765.0" y="155" text-anchor="middle">프롬프트 인젝션 방어</text></g>
+  <g><rect class="row" x="40" y="184" width="820" height="72" rx="10"/>
+    <circle cx="68" cy="220" r="18" fill="#3b82f6"/><text class="num" x="68" y="226" text-anchor="middle">01</text>
+    <text class="name" x="104" y="212">가짜 모델로 체인 만들기</text>
+    
+    <text class="desc" x="104" y="236">FakeListChatModel + LCEL, 키 없이 prompt | model | parser 구조 확인</text>
+    <rect class="lc" x="744" y="210" width="96" height="20" rx="10"/><text class="sc lcT" x="792" y="224" text-anchor="middle">LangChain</text></g>
+  <g><rect class="row" x="40" y="268" width="820" height="72" rx="10"/>
+    <circle cx="68" cy="304" r="18" fill="#3b82f6"/><text class="num" x="68" y="310" text-anchor="middle">02</text>
+    <text class="name" x="104" y="296">실제 LLM API 연동</text>
+    
+    <text class="desc" x="104" y="320">Gemini, GPT, DeepSeek 호출. DeepSeek은 base_url만 바꿔 ChatOpenAI 재사용</text>
+    <rect class="lc" x="744" y="280" width="96" height="20" rx="10"/><text class="sc lcT" x="792" y="294" text-anchor="middle">LangChain</text>
+    <rect class="sec" x="700" y="308" width="140" height="22" rx="11"/><text class="tag secT" x="770.0" y="323" text-anchor="middle">키 하드코딩 취약점</text></g>
+  <g><rect class="row" x="40" y="352" width="820" height="72" rx="10"/>
+    <circle cx="68" cy="388" r="18" fill="#3b82f6"/><text class="num" x="68" y="394" text-anchor="middle">03</text>
+    <text class="name" x="104" y="380">.env 분리와 모델 전환</text>
+    
+    <text class="desc" x="104" y="404">--provider로 모델 선택, with_fallbacks로 실패 시 자동 전환</text>
+    <rect class="mx" x="744" y="364" width="96" height="20" rx="10"/><text class="sc mxT" x="792" y="378" text-anchor="middle">혼합</text>
+    <rect class="sec" x="710" y="392" width="130" height="22" rx="11"/><text class="tag secT" x="775.0" y="407" text-anchor="middle">시크릿 분리</text></g>
+  <g><rect class="row" x="40" y="436" width="820" height="72" rx="10"/>
+    <circle cx="68" cy="472" r="18" fill="#3b82f6"/><text class="num" x="68" y="478" text-anchor="middle">04</text>
+    <text class="name" x="104" y="464">부품 분리와 조립</text>
+    
+    <text class="desc" x="104" y="488">prompt, llm, parser를 파일로 나눠 import 후 | 로 조립</text>
+    <rect class="lc" x="744" y="462" width="96" height="20" rx="10"/><text class="sc lcT" x="792" y="476" text-anchor="middle">LangChain</text></g>
+  <g><rect class="row" x="40" y="520" width="820" height="72" rx="10"/>
+    <circle cx="68" cy="556" r="18" fill="#3b82f6"/><text class="num" x="68" y="562" text-anchor="middle">05</text>
+    <text class="name" x="104" y="548">Streamlit 웹 챗봇 GUI</text>
+    
+    <text class="desc" x="104" y="572">session_state로 대화 표시, cache_resource로 모델 재사용. 이전 대화는 모델에 안 넘김</text>
+    <rect class="mx" x="744" y="546" width="96" height="20" rx="10"/><text class="sc mxT" x="792" y="560" text-anchor="middle">혼합</text></g>
+  <g><rect class="row" x="40" y="604" width="820" height="72" rx="10"/>
+    <circle cx="68" cy="640" r="18" fill="#3b82f6"/><text class="num" x="68" y="646" text-anchor="middle">06</text>
+    <text class="name" x="104" y="632">구조화 출력과 스키마 검증</text>
+    
+    <text class="desc" x="104" y="656">Pydantic 스키마, 재시도(횟수 제한), 도구 입력은 허용 목록으로 좁힘</text>
+    <rect class="mx" x="744" y="616" width="96" height="20" rx="10"/><text class="sc mxT" x="792" y="630" text-anchor="middle">혼합</text>
+    <rect class="sec" x="690" y="644" width="150" height="22" rx="11"/><text class="tag secT" x="765.0" y="659" text-anchor="middle">출력도 신뢰 금지</text></g>
+</svg>
