@@ -6,3 +6,4 @@
 | 챕터 | 주제 |
 |---|---|
 | ch06 | [6-1 AI Red Teaming: Concept & Methodology](Prism/ch06/6-1-ai-redteam-concept-methodology) |
+| ch06 | [6-2 Attack Scenario Design](Prism/ch06/6-2-attack-scenario-design) |
