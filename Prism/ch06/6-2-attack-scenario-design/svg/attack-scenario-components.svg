@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="900" height="480" role="img" aria-labelledby="t d">
+<title id="t">공격 시나리오 구성 요소</title><desc id="d">시나리오를 이루는 7가지 요소와 성공 조건 원칙</desc>
+<style>
+  text { font-family: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; fill: #1f2937; }
+  .bg { fill: #f8fafc; }
+  .title { font-size: 24px; font-weight: 700; }
+  .sub { font-size: 14px; fill: #64748b; }
+  .box { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.5; }
+  .name { font-size: 15px; font-weight: 700; }
+  .small { font-size: 12px; fill: #475569; }
+  .body { font-size: 13px; fill: #334155; }
+  .num { font-size: 14px; font-weight: 700; fill: #ffffff; }
+  .arrow { fill: #94a3b8; }
+</style>
+<rect class="bg" width="900" height="480" rx="14"/>
+<text class="title" x="30" y="46">공격 시나리오 구성 요소</text>
+<text class="sub" x="30" y="70">7가지 요소로 시나리오를 완성한다</text>
+<rect class="box" x="30" y="100" width="205" height="130" rx="10"/><circle cx="56" cy="128" r="14" fill="#3b82f6"/><text class="num" x="56" y="133" text-anchor="middle">1</text><text class="name" x="80" y="133">목표</text><text class="small" x="46" y="162">공격자가 얻고자 하는 것</text><text class="body" x="46" y="190">시스템 프롬프트 노출, 정책 우회</text><rect class="box" x="250" y="100" width="205" height="130" rx="10"/><circle cx="276" cy="128" r="14" fill="#3b82f6"/><text class="num" x="276" y="133" text-anchor="middle">2</text><text class="name" x="300" y="133">공격자 모델</text><text class="small" x="266" y="162">누가 어떤 능력으로</text><text class="body" x="266" y="190">지식·접근 수준·자원</text><rect class="box" x="470" y="100" width="205" height="130" rx="10"/><circle cx="496" cy="128" r="14" fill="#3b82f6"/><text class="num" x="496" y="133" text-anchor="middle">3</text><text class="name" x="520" y="133">전제 조건</text><text class="small" x="486" y="162">실행에 필요한 권한·범위</text><text class="body" x="486" y="190">입력창 접근, 업로드 가능</text><rect class="box" x="690" y="100" width="205" height="130" rx="10"/><circle cx="716" cy="128" r="14" fill="#3b82f6"/><text class="num" x="716" y="133" text-anchor="middle">4</text><text class="name" x="740" y="133">공격 벡터</text><text class="small" x="706" y="162">입력이 들어오는 경로</text><text class="body" x="706" y="190">직접 입력, 업로드, 웹페이지</text><rect class="box" x="30" y="250" width="205" height="130" rx="10"/><circle cx="56" cy="278" r="14" fill="#3b82f6"/><text class="num" x="56" y="283" text-anchor="middle">5</text><text class="name" x="80" y="283">공격 단계</text><text class="small" x="46" y="312">진행 순서</text><text class="body" x="46" y="340">정찰 -&gt; 탐색 -&gt; 전달 -&gt; 확인</text><rect class="box" x="250" y="250" width="205" height="130" rx="10"/><circle cx="276" cy="278" r="14" fill="#3b82f6"/><text class="num" x="276" y="283" text-anchor="middle">6</text><text class="name" x="300" y="283">성공 조건</text><text class="small" x="266" y="312">성공 판정 기준</text><text class="body" x="266" y="340">응답 문자열, 도구 호출 로그</text><rect class="box" x="470" y="250" width="205" height="130" rx="10"/><circle cx="496" cy="278" r="14" fill="#3b82f6"/><text class="num" x="496" y="283" text-anchor="middle">7</text><text class="name" x="520" y="283">영향도</text><text class="small" x="486" y="312">성공 시 피해</text><text class="body" x="486" y="340">기밀 유출, 권한 상승</text><rect x="30" y="400" width="840" height="60" rx="10" fill="#fffbeb" stroke="#f59e0b" stroke-width="2"/><text class="name" x="450" y="425" text-anchor="middle">성공 조건은 관측 가능한 증거로, 비결정적이라 N회 시도 중 성공 비율로 표현</text><text class="small" x="450" y="447" text-anchor="middle">완전 성공 / 부분 성공 / 실패로 단계 구분</text></svg>
